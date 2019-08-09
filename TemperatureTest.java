@@ -1,4 +1,4 @@
-package world;
+package temperature;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,9 +9,10 @@ class TemperatureTest {
 	@Test
 	void test() {
 		Temperature temp= new Temperature();
-		double a=temp.CelstoFar(60);
-		double b=temp.FartoCels(a);
-		assertEquals(b,60);
+		double actual=60;
+		double alpha=temp.CelsiustoFahrenheit(actual);
+		double expected=temp.FahrenheittoCelsius(alpha);
+		assertEquals(actual,expected);
 	}
 
 }
