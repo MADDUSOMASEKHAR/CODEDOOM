@@ -1,4 +1,4 @@
-package world;
+package factorial;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,8 +8,10 @@ class FactorialTest {
 
 	@Test
 	void test() {
-		Factorial fc= new Factorial();
-		assertEquals(120,fc.calculateFactorial(5));
+		Factorial factorial= new Factorial();
+		double actual = 120;
+		double result= factorial.calculateFactorial(5);
+		assertEquals(actual, result);
 	}
 
 }
