@@ -1,29 +1,14 @@
-package world;
-
-import java.util.Scanner;
+package temperature;
 
 public class Temperature {
-	public double CelstoFar(double a)
+	public double CelsiustoFahrenheit(double celsius)
 	{
-		double res= (a*1.8)+32;
-		return res;
+		double result= (celsius*1.8)+32;
+		return result;
 	}
-	public double FartoCels(double b)
+	public double FahrenheittoCelsius(double fahrenheit)
 	{
-		double res= ((b-32)*5/9);
-		return res;
+		double result= ((fahrenheit-32)*5/9);
+		return result;
 	}
-	public static void main(String[] args)
-	{
-		Scanner a= new Scanner(System.in);
-		double c,d;
-		Temperature temp= new Temperature();
-		System.out.println("Enter the Celsius Temperature");
-		c=a.nextDouble();
-		System.out.println("Conversion of Celsius to Fahrenheit is "+temp.CelstoFar(c));
-		System.out.println("Enter the Fahrenheit Temperature");
-		d=a.nextDouble();
-		System.out.println("Conversion of Fahrenheit to Celsius is "+temp.FartoCels(d));
-	}
-
 }
