@@ -9,8 +9,9 @@ class helloworldTest {
 	@Test
 	void test() {
 		helloworld hello= new helloworld();
+		String actual= "helloworld";
 		String result= hello.getMessage();
-		assertEquals("helloworld",result);
+		assertEquals(actual,result);
 	}
 
 }
