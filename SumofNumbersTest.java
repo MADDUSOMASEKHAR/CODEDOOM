@@ -1,4 +1,4 @@
-package world;
+package summation;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,8 +9,10 @@ class SumofNumbersTest {
 	@Test
 	void test() {
 		SumofNumbers sum= new SumofNumbers();
-		assertEquals(30,sum.SumofEven(2, 10));
-		assertEquals(24,sum.SumofOdd(2, 10));
+		int actual1 = 30, actual2 = 24;
+		int expected1= sum.SumofEvenNumbers(2, 10), expected2= sum.SumofOddNumbers(2, 10);
+		assertEquals(actual1,expected1);
+		assertEquals(actual2,expected2);
 	}
 
 }
