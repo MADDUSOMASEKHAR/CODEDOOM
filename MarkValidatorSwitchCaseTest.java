@@ -1,4 +1,4 @@
-package world;
+package markswitchcase;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,9 +8,9 @@ class MarkValidatorSwitchCaseTest {
 
 	@Test
 	void test() {
-		MarkValidatorSwitchCase msc= new MarkValidatorSwitchCase();
-		assertEquals(true,msc.isPass(65));
-		assertEquals("Grade C",msc.markGrade(65));
+		MarkValidatorSwitchCase marks= new MarkValidatorSwitchCase();
+		assertEquals(true,marks.isPass(65));
+		assertEquals("Grade C",marks.markGrade(65));
 	}
 
 }
