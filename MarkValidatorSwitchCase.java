@@ -1,6 +1,4 @@
-package world;
-
-import java.util.Scanner;
+package markswitchcase;
 
 public class MarkValidatorSwitchCase {
 	
@@ -34,16 +32,4 @@ public class MarkValidatorSwitchCase {
 				return "Grade D";
 		}
 	}
-	
-	public static void main(String[] args)
-	{
-		Scanner sc= new Scanner(System.in);
-		MarkValidatorSwitchCase msc= new MarkValidatorSwitchCase();
-		int a;
-		System.out.println("Enter the marks");
-		a=sc.nextInt();
-		System.out.println(msc.isPass(a));
-		System.out.println(msc.markGrade(a));
-	}
-
 }
