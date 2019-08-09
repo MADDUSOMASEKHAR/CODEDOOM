@@ -1,4 +1,4 @@
-package world;
+package marks;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,9 +8,9 @@ class MarkValidatorTest {
 
 	@Test
 	void test() {
-		MarkValidator mv= new MarkValidator();
-		assertEquals(true,mv.isPass(91));
-		assertEquals("Grade A",mv.markGrade(91));
+		MarkValidator mark= new MarkValidator();
+		assertEquals(true,mark.isPass(91));
+		assertEquals("Grade A",mark.markGrade(91));
 	}
 
 }
